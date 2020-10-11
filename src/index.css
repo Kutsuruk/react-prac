@@ -19,9 +19,13 @@ code {
   width: 600px;
 }
 
-.rm{
+.rm {
   background: red;
   border-radius: 50%;
   color: white;
   border: none;
+}
+
+.done {
+  text-decoration: line-through;
 }
