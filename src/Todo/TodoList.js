@@ -10,13 +10,12 @@ const styles = {
 }
 
 
-const TodoList = () => {
+const TodoList = (props) => {
     return(
         <ul style={styles.ul}>
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
+           {props.todos.map((todo, index) => {
+               return <TodoItem todo={todo} key={todo.id} index={index} />
+           })}
         </ul>
     )
 }
